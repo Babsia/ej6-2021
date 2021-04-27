@@ -15,7 +15,7 @@ class Menu:
     def getSwitcher(self):
         return self.__switcher
 
-    def opcion(self, op):
+    def opcion(self,op):
         func=self.__switcher.get(op, lambda: print("Opción no válida"))
         func()
 
